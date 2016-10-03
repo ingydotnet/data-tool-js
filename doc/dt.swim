@@ -1,0 +1,40 @@
+dt
+==
+
+Data Tool - Convert From One Data Format to Another
+
+= Synopsis
+
+These 3 commands do the same thing:
+
+  $ dt -t yaml file.json
+  $ dt -i file.json -o file.yaml
+  $ dt -i file.json -t yaml > file.yaml
+
+= Description
+
+The `dt` tool converts data files or streams from one format to another. The
+following formats are supported:
+
+* AT (Ascii Table)
+* BSON
+* CSON
+* CSV
+* EDT
+* HCL (https://github.com/hashicorp/hcl)
+* INI
+* JSON
+* JSYNC
+* MessagePack
+* ODS
+* SQL
+* TOML
+* TSV
+* XML
+* YAML
+
+= Installation
+
+The `dt` command is written in NodeJS. To install it, run:
+
+    > npm install -g dt

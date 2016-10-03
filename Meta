@@ -1,0 +1,36 @@
+=meta: 0.0.2
+
+name: data-tool
+version: 0.0.1
+abstract: Data format transformation tool
+homepage: http://yaml.org
+tag: [yaml, json, convert]
+license: MIT
+copyright: 2016
+
+author:
+  name: Ingy döt Net
+  email: ingy@ingy.net
+  homepage: http://ingy.net
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+
+devel:
+  git: https://github.com/ingydotnet/data-tool-js
+  bug: https://github.com/ingydotnet/data-tool-js/issues
+  irc: irc.freenode.net#yaml
+
+=npm:
+  bin:
+    dt: ./bin/dt
+  engines:
+    node: '>=0.4.0'
+  dependencies:
+    argparse: '>=0'
+    lodash: '>=0'
+    js-yaml: '>=0'
+  devDependencies:
+    coffee-script: '>=1.3.3'
+  scripts:
+    test: coffee -e '(require "./test/lib/Test/Harness").run()' test
